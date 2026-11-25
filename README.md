@@ -5,7 +5,7 @@
 **Actividad:** Generación — Implementación Práctica de GANs y Modelos de Difusión Latente  
 **Fecha:** Noviembre de 2026  
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oscar2121/modelos-generativos-dcgan-stable-diffusion/blob/main/DCGAN_Stable_Diffusion_Generacion_Colab.ipynb)
 
 ---
 

@@ -375,8 +375,8 @@ def build_docx(fig_paths):
   <Relationship Id="rIdFig3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/figura3.png"/>
   <Relationship Id="rIdFig4" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/figura4.png"/>
   <Relationship Id="rIdFig5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/figura5.png"/>
-  <Relationship Id="rIdColabLink" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://colab.research.google.com/" TargetMode="External"/>
-  <Relationship Id="rIdGithubLink" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://github.com/" TargetMode="External"/>
+  <Relationship Id="rIdColabLink" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://colab.research.google.com/github/oscar2121/modelos-generativos-dcgan-stable-diffusion/blob/main/DCGAN_Stable_Diffusion_Generacion_Colab.ipynb" TargetMode="External"/>
+  <Relationship Id="rIdGithubLink" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://github.com/oscar2121/modelos-generativos-dcgan-stable-diffusion" TargetMode="External"/>
 </Relationships>"""
 
     header1_xml = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -825,17 +825,17 @@ def build_docx(fig_paths):
 
     body.append("""<w:p>
       <w:pPr><w:jc w:val="left"/><w:ind w:left="500"/><w:spacing w:before="40" w:after="100" w:line="340" w:lineRule="auto"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:b/><w:sz w:val="22"/><w:color w:val="0F172A"/></w:rPr><w:t xml:space="preserve">• Notebook en Google Colab: </w:t></w:r>
+      <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:b/><w:sz w:val="21"/><w:color w:val="0F172A"/></w:rPr><w:t xml:space="preserve">• Notebook en Google Colab: </w:t></w:r>
       <w:hyperlink r:id="rIdColabLink" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
-        <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:u w:val="single"/><w:sz w:val="22"/><w:color w:val="2563EB"/></w:rPr><w:t>DCGAN_Stable_Diffusion_Generacion_Colab.ipynb (Google Colaboratory)</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:u w:val="single"/><w:sz w:val="20"/><w:color w:val="2563EB"/></w:rPr><w:t>https://colab.research.google.com/github/oscar2121/modelos-generativos-dcgan-stable-diffusion/blob/main/DCGAN_Stable_Diffusion_Generacion_Colab.ipynb</w:t></w:r>
       </w:hyperlink>
     </w:p>""")
 
     body.append("""<w:p>
       <w:pPr><w:jc w:val="left"/><w:ind w:left="500"/><w:spacing w:before="40" w:after="180" w:line="340" w:lineRule="auto"/></w:pPr>
-      <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:b/><w:sz w:val="22"/><w:color w:val="0F172A"/></w:rPr><w:t xml:space="preserve">• Repositorio en GitHub: </w:t></w:r>
+      <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:b/><w:sz w:val="21"/><w:color w:val="0F172A"/></w:rPr><w:t xml:space="preserve">• Repositorio en GitHub: </w:t></w:r>
       <w:hyperlink r:id="rIdGithubLink" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
-        <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:u w:val="single"/><w:sz w:val="22"/><w:color w:val="2563EB"/></w:rPr><w:t>https://github.com/ (Repositorio proyecto-modelos-generativos-dcgan-sd)</w:t></w:r>
+        <w:r><w:rPr><w:rFonts w:ascii="Calibri" w:hAnsi="Calibri"/><w:u w:val="single"/><w:sz w:val="20"/><w:color w:val="2563EB"/></w:rPr><w:t>https://github.com/oscar2121/modelos-generativos-dcgan-stable-diffusion</w:t></w:r>
       </w:hyperlink>
     </w:p>""")
 
